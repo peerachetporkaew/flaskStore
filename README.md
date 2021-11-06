@@ -1,4 +1,5 @@
 # flaskStore
+Simple REST API for online shopping store with Dockerfile (also support Heroku !)
 
 # Dependencies
 - Flask
