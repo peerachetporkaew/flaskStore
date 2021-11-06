@@ -9,8 +9,8 @@ COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN pip install -r requirements.txt
 COPY . /app
-EXPOSE 5000
+EXPOSE $PORT
 RUN export FLASK_APP=app
 ENTRYPOINT [ "flask" ]
-CMD ["run"]
+CMD ["run","--host", "0.0.0.0", "--port","$PORT"]
 

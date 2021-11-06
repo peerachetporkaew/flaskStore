@@ -26,3 +26,6 @@ def product_list():
     #return "HELLO"
     return jsonify({'rows':list(results)})
 
+@app.route("/")
+def index():
+    return "HELLO WORLD"
