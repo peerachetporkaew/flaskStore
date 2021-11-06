@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 from product import *
+import os 
 
 app = Flask(__name__)
 
@@ -29,3 +30,6 @@ def product_list():
 @app.route("/")
 def index():
     return "HELLO WORLD"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0",port=int(os.environ.get('PORT',33507)))

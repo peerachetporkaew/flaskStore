@@ -41,3 +41,15 @@ To run docker
 ```
 docker run -d -p 5000:5000 flaskstore
 ```
+
+# Heroku
+
+```
+heroku login
+heroku container:login
+heroku create {appname}
+heroku container:push web --app {appname}
+heroku container:release web --app {appname}
+heroku open --app {appname}
+heroku logs --tail --app {appname}
+```
