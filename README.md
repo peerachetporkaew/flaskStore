@@ -40,7 +40,7 @@ docker build -t flaskstore:latest .
 To run docker
 
 ```
-docker run -d -p 5000:5000 flaskstore
+docker run -d -p 5000:5000 flaskstore:latest
 ```
 
 # Heroku
