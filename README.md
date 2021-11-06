@@ -27,3 +27,17 @@ To run web server
 export FLASK_APP=app
 flask run
 ```
+
+# Docker
+
+To build docker image (flaskstore)
+
+```
+docker build -t flaskstore:latest .
+```
+
+To run docker
+
+```
+docker run -d -p 5000:5000 flaskstore
+```
