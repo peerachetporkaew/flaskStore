@@ -24,8 +24,8 @@ python3 product.py add --id 0001 --name XiaoMi --price 12000
 To run web server
 
 ```
-export FLASK_APP=app
-flask run
+export PORT=5000
+python3 app.py
 ```
 
 # Docker
